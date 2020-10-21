@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Mail Shark Google Rating</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_inner">
+            <div class="nav_logo__left">
+                <img src="images/logo.svg" alt="Mail Shark logo">
+            </div>
+            <div class="nav_inner__right">
+                <div class="nav_rating">
+                    <div class="nav_rating__top">
+                        <p>1.0</p>
+                        <img src="images/star-gray.svg" alt="star" />
+                        <img src="images/star-gray.svg" alt="star" />
+                        <img src="images/star-gray.svg" alt="star" />
+                        <img src="images/star-gray.svg" alt="star" />
+                        <img src="images/star-gray.svg" alt="star" />
+                    </div>
+                    <div class="nav_rating__bottom">
+                        <p id="numberOfReviews">1 Google reviews</p>
+                    </div>
+                </div>  
+                <p class="nav_phone">484-652-8359</p>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <p>Google rating above is dynamic. It reads from the Google Places API. </p>
+        <form id="form">
+            <input type="number" step=".1" min="1.0" max="5.0" value="1.0" id="newRating" name="newRating">
+            <button>Change Average</button>
+        </form>
+    </main>
+    <div id="dataContainer"></div>
+    <script type ="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBITx5CCcY24h5p9xuZtyKKKTEEwMFqLsU&libraries=places"></script>
+    <script type ="text/javascript" src="app.js"></script>
+</body>
+</html>
