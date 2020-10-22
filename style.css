@@ -18,7 +18,9 @@ main{
 }
 
 main p{
-    margin-bottom: 1rem;
+    width: 85%;
+    margin: 0 auto 1rem auto;
+    text-align: center;
 }
 
 p{
@@ -38,6 +40,15 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 375px){
+    .nav_inner{
+        flex-direction: column;
+    }
+    .nav_inner__left{
+        margin-bottom: 1rem;
+    }
 }
 
 .nav_inner__right{
@@ -66,6 +77,12 @@ nav{
     font-size: .75rem;
     color: gray;
     text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .nav_phone{
+        display: none;
+    }
 }
 
 .nav_phone{
