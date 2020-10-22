@@ -1,5 +1,3 @@
-const key = "AIzaSyBITx5CCcY24h5p9xuZtyKKKTEEwMFqLsU";
-
 const dataContainer = document.querySelector('#dataContainer');
 const numberContainer = document.querySelector('#numberOfReviews');
 const addStarsToo = document.querySelector('.nav_rating__top');
@@ -12,17 +10,20 @@ var request = {
   
 var service = new google.maps.places.PlacesService(dataContainer);
 service.getDetails(request, callback);
-  
+
+// pass the data to render functions
 function callback(place, status) {
     console.log(place);
     renderStars(place.rating);
     renderNumberOfReviews(place.user_ratings_total);
 }
 
+//render the rating by-line
 function renderNumberOfReviews(numberOfReviews){
     numberContainer.textContent = `${numberOfReviews} Google reviews`;   
 }
 
+//creates HTML and injects the stars into the navigation bar
 function renderStars(rating){
     const numberOfStars = Math.floor(rating);
     const fractionStar = rating % 1;
@@ -57,6 +58,7 @@ function renderStars(rating){
     form.newRating.value = rating;
 }
 
+//for testing
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     newRating = form.newRating.value;

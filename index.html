@@ -15,6 +15,7 @@
             </div>
             <div class="nav_inner__right">
                 <div class="nav_rating">
+                    <!-- the innerHTML of this element is changed when data is returned by the API -->
                     <div class="nav_rating__top">
                         <p>1.0</p>
                         <img src="images/star-gray.svg" alt="star" />
@@ -39,6 +40,7 @@
         </form>
     </main>
     <div id="dataContainer"></div>
+    <!-- load the Google Places API -->
     <script type ="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBITx5CCcY24h5p9xuZtyKKKTEEwMFqLsU&libraries=places"></script>
     <script type ="text/javascript" src="app.js"></script>
 </body>
