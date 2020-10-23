@@ -2,7 +2,7 @@
 
 I challenged myself to create a header which reads rating data from Google's Places API
 
-[Full blog post](https://benterry.dev/blog/ms-google-rating/
+[Full blog post](https://benterry.dev/blog/ms-google-rating/)
 
 ## About this exploration
 
